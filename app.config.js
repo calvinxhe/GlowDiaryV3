@@ -10,7 +10,7 @@ export default {
     orientation: 'portrait',
     icon: './assets/flame.png',
     splash: {
-      image: './assets/splash.png',
+      image: 'https://media.tenor.com/NVS8DOBcunIAAAAC/yippee-cat.gif',
       resizeMode: 'cover',
       backgroundColor: '#F57C00'
     },
