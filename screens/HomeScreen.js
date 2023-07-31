@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, Button } from 'react-native';
 import { signOut } from 'firebase/auth';
 import Journal from '../components/Journal';
-import { doc, setDoc } from '@firebase/firestore';
+import ImagePickerExample from '../components/imagepicker';
 import { collection, addDoc } from '@firebase/firestore';
 
 import { auth, db } from '../config';
@@ -31,13 +31,16 @@ export const HomeScreen = () => {
       console.error('Error creating new journal:', error);
     }
   };
-  
+  const handleImageUpload = (url) => {
+    // Handle the uploaded image URL, perhaps by saving it to Firestore or state
+  };
 
   return (
     <View style={styles.container}>
       <Button title='Sign Out' onPress={handleLogout} />
       <Button title='Create New Journal' onPress={handleCreateNewJournal} />
-      <Journal/>
+      <ImagePickerExample onImageUpload={handleImageUpload} />
+      <Journal />
     </View>
   );
 };
