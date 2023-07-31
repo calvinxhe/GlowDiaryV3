@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
-import { db } from 'firebase/app';
+import { db } from '../config/firebase';
+import { useNavigation } from '@react-navigation/native';
 
 const Journal = () => {
+  const navigation = useNavigation();
   const [entries, setEntries] = useState([]);
   const [newEntry, setNewEntry] = useState('');
 
   const handleAddEntry = () => {
     setEntries([...entries, { id: entries.length.toString(), text: newEntry }]);
     setNewEntry('');
+  };
+
+  const navigateToFaceCamera = () => {
+    navigation.navigate('FaceCamera');
   };
 
   return (
@@ -22,6 +28,9 @@ const Journal = () => {
       />
       <TouchableOpacity style={styles.button} onPress={handleAddEntry}>
         <Text style={styles.buttonText}>Add Entry</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={navigateToFaceCamera}>
+        <Text style={styles.buttonText}>Go to Face Camera</Text>
       </TouchableOpacity>
       <FlatList
         data={entries}
