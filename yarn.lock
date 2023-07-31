@@ -56,7 +56,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.13.16", "@babel/core@^7.14.0", "@babel/core@^7.18.6":
+"@babel/core@^7.13.16", "@babel/core@^7.14.0", "@babel/core@^7.19.3":
   version "7.22.9"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.22.9.tgz#bd96492c68822198f33e8a256061da3cf391f58f"
   integrity sha512-G2EgeufBcYw27U4hhoIwFcgc1XU7TlXJ3mv04oOv1WCuo900U/anZSPzEqNjwdjgffkk2Gs0AN0dW1CKVLcG7w==
@@ -1284,7 +1284,7 @@
     node-forge "^1.2.1"
     nullthrows "^1.1.1"
 
-"@expo/config-plugins@~5.0.0", "@expo/config-plugins@~5.0.1", "@expo/config-plugins@~5.0.3":
+"@expo/config-plugins@^5.0.1", "@expo/config-plugins@~5.0.0", "@expo/config-plugins@~5.0.1", "@expo/config-plugins@~5.0.3":
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-5.0.4.tgz#216fea6558fe66615af1370de55193f4181cb23e"
   integrity sha512-vzUcVpqOMs3h+hyRdhGwk+eGIOhXa5xYdd92yO17RMNHav3v/+ekMbs7XA2c3lepMO8Yd4/5hqmRw9ZTL6jGzg==
@@ -1539,7 +1539,7 @@
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-13.0.0.tgz#e2989b85e95a82bce216f88cf8fb583ab050ec95"
   integrity sha512-TI+l71+5aSKnShYclFa14Kum+hQMZ86b95SH6tQUG3qZEmLTarvWpKwqtTwQKqvlJSJrpFiSFu3eCuZokY6zWA==
 
-"@expo/webpack-config@^0.17.0":
+"@expo/webpack-config@^0.17.2":
   version "0.17.4"
   resolved "https://registry.yarnpkg.com/@expo/webpack-config/-/webpack-config-0.17.4.tgz#c2cb670a8f431dc76a645d183a38465ed235e3a7"
   integrity sha512-vn37RDhYowfLc2oRaXhmbI/9FStjQFXPONG3yRLfwUnA4dRtfXapJUSKHJKRwOy4fBBmTrb2tthtsdb4zeWmsw==
@@ -2356,11 +2356,12 @@
     prompts "^2.4.0"
     semver "^6.3.0"
 
-"@react-native-firebase/app@^18.3.0":
-  version "18.3.0"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-18.3.0.tgz#8e19eb3f9e6d9596c1d0d904bca3a2effafe9d4f"
-  integrity sha512-4sJf5mM551Y6E8D1hQufAU/PNEecJEaJbF4Me0JyclI2RXUHlTxJUpAsB/gxPY74LY99FaogFsDEB+3BuZ2B9w==
+"@react-native-firebase/app@~15.4.0":
+  version "15.4.0"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-15.4.0.tgz#616a6d13956fbed1ee010ca05b9e62969d19b5c5"
+  integrity sha512-1Xf1Q0x6x6dZamRjIpDLCvj4CUwozr1mvH3sc3A4J1avjGUwgqD0RR58DGd7r9akU+JmEXLHB84EZ9Aa68AHDg==
   dependencies:
+    "@expo/config-plugins" "^5.0.1"
     opencollective-postinstall "^2.0.1"
     superstruct "^0.6.2"
 
@@ -3304,7 +3305,7 @@ babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
   integrity sha512-Xj9XuRuz3nTSbaTXWv3itLOcxyF4oPD8douBBmj7U9BBC6nEBYfyOJYQMf/8PJAFotC62UY5dFfIGEPr7WswzQ==
 
-babel-preset-expo@~9.2.0:
+babel-preset-expo@~9.2.0, babel-preset-expo@~9.2.1:
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-9.2.2.tgz#3f3819a224bbc32cefebb5d97a40c950a2f7ae2e"
   integrity sha512-69cSPObZWFz0AaUT6IhCu2VzPVTICUtXzhX5ecoDttFe+9wb9yMV8m7rBNZptJQ3wtiKB5iEL7/wvtKygPz/mQ==
@@ -5248,7 +5249,7 @@ expo-camera@~12.5.0:
     "@koale/useworker" "^4.0.2"
     invariant "^2.2.4"
 
-expo-constants@~13.2.2, expo-constants@~13.2.3, expo-constants@~13.2.4:
+expo-constants@~13.2.2, expo-constants@~13.2.4:
   version "13.2.4"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-13.2.4.tgz#eab4a553f074b2c60ad7a158d3b82e3484a94606"
   integrity sha512-Zobau8EuTk2GgafwkfGnWM6CmSLB7X8qnQXVuXe0nd3v92hfQUmRWGhJwH88uxXj3LrfqctM6PaJ8taG1vxfBw==
@@ -9351,7 +9352,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-promise@^8.0.3:
+promise@^8.2.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/promise/-/promise-8.3.0.tgz#8cb333d1edeb61ef23869fbb8a4ea0279ab60e0a"
   integrity sha512-rZPNPKTOYVNEEKFaq1HqTgOwZD+4/YHS5ukLzQCypkj+OkYx7iv0mA91lJlpPPZ8vMau3IIGj5Qlwrx+8iiSmg==
@@ -9672,7 +9673,7 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-codegen@^0.69.1:
+react-native-codegen@^0.69.2:
   version "0.69.2"
   resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.69.2.tgz#e33ac3b1486de59ddae687b731ddbfcef8af0e4e"
   integrity sha512-yPcgMHD4mqLbckqnWjFBaxomDnBREfRjDi2G/WxNyPBQLD+PXUEmZTkDx6QoOXN+Bl2SkpnNOSsLE2+/RUHoPw==
@@ -9751,10 +9752,10 @@ react-native-web@~0.18.7:
     postcss-value-parser "^4.2.0"
     styleq "^0.1.2"
 
-react-native@0.69.4:
-  version "0.69.4"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.69.4.tgz#d66f2a117442a9398b065876afdc568b209dc4da"
-  integrity sha512-rqNMialM/T4pHRKWqTIpOxA65B/9kUjtnepxwJqvsdCeMP9Q2YdSx4VASFR9RoEFYcPRU41yGf6EKrChNfns3g==
+react-native@0.69.9:
+  version "0.69.9"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.69.9.tgz#c988dfc2e21b3b586d35a8cc57b102537e760edc"
+  integrity sha512-I1xqIn47RWxBToO4E6yqyIPSaK9mZnMiscMfrFpWjQr3Gdkicr9y+twmtrRszxaLdQLjHzh/M3y4qOqc3hZnpg==
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^8.0.4"
@@ -9777,9 +9778,9 @@ react-native@0.69.4:
     mkdirp "^0.5.1"
     nullthrows "^1.1.1"
     pretty-format "^26.5.2"
-    promise "^8.0.3"
+    promise "^8.2.0"
     react-devtools-core "4.24.0"
-    react-native-codegen "^0.69.1"
+    react-native-codegen "^0.69.2"
     react-native-gradle-plugin "^0.0.7"
     react-refresh "^0.4.0"
     react-shallow-renderer "16.15.0"
